@@ -13,4 +13,4 @@ To install it is very simple, just clone the repository and add this to your ini
              "/path/to/sexy/theme/")
 #+END_SRC
 
-* TODO add this theme to melpa packages 
+- TODO: add this theme to melpa packages 
