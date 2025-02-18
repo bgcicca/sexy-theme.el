@@ -1,4 +1,4 @@
-;;; sexy-theme.el --- Sexy color theme for Emacs 24+.
+;;; sexy-theme.el --- Sexy color theme.
 
 ;; Copyright (C) 2025 Bruno Ciccarino a.k.a cicca
 ;; Copyright (C) 2013-2016 Alexey Kutepov a.k.a rexim
