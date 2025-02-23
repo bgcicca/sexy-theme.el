@@ -35,8 +35,10 @@
 ;; for deftheme and extended by Bruno Ciccarino a.k.a. cicca.
 
 
+;;; Code:
+
 (deftheme sexy
-  "Sexy color theme for Emacs 24")
+  "Sexy color theme for Emacs 24.")
 
 ;; Please, install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
