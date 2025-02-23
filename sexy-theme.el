@@ -1,11 +1,11 @@
-;;; sexy-theme.el --- Sexy color theme.
+;;; sexy-theme.el --- Sexy color theme
 
 ;; Copyright (C) 2025 Bruno Ciccarino a.k.a cicca
 ;; Copyright (C) 2013-2016 Alexey Kutepov a.k.a rexim
 ;; Copyright (C) 2009-2010 Jason R. Blevins
 
 ;; Author: Bruno Ciccarino <brunociccarinoo@gmail.com>
-;; URL: http://github.com/bgcicca/sexy-theme
+;; URL: http://github.com/bgcicca/sexy-theme.el
 ;; Version: 0.1
 
 ;; Permission is hereby granted, free of charge, to any person
@@ -36,7 +36,7 @@
 
 
 (deftheme sexy
-    "Sexy color theme for Emacs 24")
+  "Sexy color theme for Emacs 24")
 
 ;; Please, install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
@@ -61,12 +61,10 @@
       (sexy-niagara-2 "#303540")
       (sexy-niagara-1 "#565f73")
       (sexy-niagara   "#96a6c8")
-      (sexy-wisteria  "#9e95c7")
-      )
+      (sexy-wisteria  "#9e95c7"))
   (custom-theme-set-variables
    'sexy
    '(frame-brackground-mode (quote dark)))
-
   (custom-theme-set-faces
    'sexy
 
@@ -407,14 +405,12 @@
    `(orderless-match-face-0 ((t (:foreground ,sexy-yellow))))
    `(orderless-match-face-1 ((t (:foreground ,sexy-green))))
    `(orderless-match-face-2 ((t (:foreground ,sexy-brown))))
-   `(orderless-match-face-3 ((t (:foreground ,sexy-quartz))))
-   ))
+   `(orderless-match-face-3 ((t (:foreground ,sexy-quartz)))))))
 
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
-
 (provide-theme 'sexy)
 
 ;; Local Variables:
