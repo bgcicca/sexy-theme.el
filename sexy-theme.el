@@ -1,4 +1,4 @@
-;;; sexy-theme.el --- Sexy color theme
+;;; sexy-theme.el --- Sexy color theme  -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2025 Bruno Ciccarino a.k.a cicca
 ;; Copyright (C) 2013-2016 Alexey Kutepov a.k.a rexim
@@ -7,6 +7,7 @@
 ;; Author: Bruno Ciccarino <brunociccarinoo@gmail.com>
 ;; URL: http://github.com/bgcicca/sexy-theme.el
 ;; Version: 0.1
+;; Package-Requires: ((emacs "24.1"))
 
 ;; Permission is hereby granted, free of charge, to any person
 ;; obtaining a copy of this software and associated documentation
@@ -30,15 +31,15 @@
 
 ;;; Commentary:
 ;;
-;; Sexy color theme for Emacs by Bruno Ciccarino. A strong colors
-;; variant of the Gruber Dark theme for BBEdit by John Gruber. Adapted
+;; Sexy color theme for Emacs by Bruno Ciccarino.  A strong colors
+;; variant of the Gruber Dark theme for BBEdit by John Gruber.  Adapted
 ;; for deftheme and extended by Bruno Ciccarino a.k.a. cicca.
 
 
 ;;; Code:
 
 (deftheme sexy
-  "Sexy color theme for Emacs 24.")
+  "Sexy color theme for Emacs 24.1+")
 
 ;; Please, install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
@@ -407,7 +408,7 @@
    `(orderless-match-face-0 ((t (:foreground ,sexy-yellow))))
    `(orderless-match-face-1 ((t (:foreground ,sexy-green))))
    `(orderless-match-face-2 ((t (:foreground ,sexy-brown))))
-   `(orderless-match-face-3 ((t (:foreground ,sexy-quartz)))))))
+   `(orderless-match-face-3 ((t (:foreground ,sexy-quartz))))))
 
 ;;;###autoload
 (when load-file-name
