@@ -1,4 +1,4 @@
-;;; sexy-theme.el --- Sexy color theme  -*- lexical-binding: t -*-
+;;; sexy-theme.el --- A strong colors variant of the Gruber Darker theme  -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2025 Bruno Ciccarino a.k.a cicca
 ;; Copyright (C) 2013-2016 Alexey Kutepov a.k.a rexim
@@ -39,7 +39,7 @@
 ;;; Code:
 
 (deftheme sexy
-  "Sexy color theme for Emacs 24.1+")
+  "Sexy color theme for Emacs 24.1+.")
 
 ;; Please, install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
