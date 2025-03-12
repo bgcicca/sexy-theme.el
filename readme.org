@@ -1,16 +1,70 @@
 * Sexy theme
 
+[[https://melpa.org/#/sexy-theme][file:https://melpa.org/packages/sexy-theme-badge.svg]]
+
 Sexy color theme for Emacs by Bruno Ciccarino. A strong colors variant of the Gruber Darker theme for deftheme by rexim. Extended by Bruno Ciccarino a.k.a. cicca.
 
 [[./sexy.png]]
 
-** Install
+** Installation
 
-To install it is very simple, just clone the repository and add this to your init file:
+There are two ways to install the theme: using MELPA or manually.
 
-#+BEGIN_SRC
-(add-to-list 'custom-theme-load-path
-             "/path/to/sexy/theme/")
-#+END_SRC
+*** Install from MELPA
 
-- TODO: add this theme to melpa packages 
+1. Ensure MELPA is added to your package archives by adding the following to your init file (`init.el` or `.emacs`):
+
+   #+BEGIN_SRC emacs-lisp
+   (require 'package)
+
+   (add-to-list 'package-archives
+                '("melpa" . "https://melpa.org/packages/") t)
+
+   (package-initialize)
+   #+END_SRC
+
+2. Refresh package contents:
+
+   #+BEGIN_SRC emacs-lisp
+   M-x package-refresh-contents
+   #+END_SRC
+
+3. Install the theme:
+
+   #+BEGIN_SRC emacs-lisp
+   M-x package-install RET sexy-theme RET
+   #+END_SRC
+
+4. Load the theme:
+
+   #+BEGIN_SRC emacs-lisp
+   (load-theme 'sexy t)
+   #+END_SRC
+
+5. To enable the theme at startup, add the load-theme command to your init file.
+
+*** Manual installation
+
+Alternatively, you can install the theme manually:
+
+1. Clone the repository:
+
+   #+BEGIN_SRC shell
+   https://github.com/bgcicca/sexy-theme.el
+   #+END_SRC
+
+2. Add the theme's directory to your custom theme load path:
+
+   #+BEGIN_SRC emacs-lisp
+   (add-to-list 'custom-theme-load-path "/path/to/sexy-theme/")
+   #+END_SRC
+
+3. Load the theme:
+
+   #+BEGIN_SRC emacs-lisp
+   (load-theme 'sexy t)
+   #+END_SRC
+
+** License
+
+This project is licensed under the MIT License.
